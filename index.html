@@ -10,13 +10,19 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-
+    *, *::before, *::after{
+      box-sizing: border-box;
+    }
     :root{
       --button-bg: hsl(0, 0%, 20%);
       --secondary-color: hsl(0, 0%, 12%);
       --primary-color: hsl(0, 0%, 8%);
       --accent-color: #fff;
       --address-color:  hsl(75, 94%, 57%);
+    }
+
+    p{
+      font-size: .875rem;
     }
 
     body{
@@ -31,9 +37,8 @@
 
     .container{
       background-color: var(--secondary-color);
-      width: 80%;
+      width: 70%;
       max-width: 350px;
-      margin: 0 auto;
       padding: 30px;
       border-radius: 15px;
       text-align: center;
@@ -76,8 +81,7 @@
       color: var(--address-color);
       margin-top: 0;
     }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
   </style>
 </head>
 <body>
