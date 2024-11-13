@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    :root{
+      --button-bg: hsl(0, 0%, 20%);
+      --secondary-color: hsl(0, 0%, 12%);
+      --primary-color: hsl(0, 0%, 8%);
+      --accent-color: #fff;
+      --address-color:  hsl(75, 94%, 57%);
+    }
+
+    body{
+      background-color: var(--primary-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      font-family: 'Inter',sans-serif;
+    }
+
+    .container{
+      background-color: var(--secondary-color);
+      width: 90%;
+      max-width: 350px;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      
+    }
+
+    .container .avatar{
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    .name{
+      color: var(--accent-color);
+      
+    }
+
+    .occupation{
+      color: var(--accent-color);
+      margin-top: 1.7em;
+    }
+
+    .links{
+      margin-top: 3em;
+    }
+
+    .links .link{
+      display: block;
+      background: var(--button-bg);
+      margin-top: 10px;
+      padding: 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: var(--accent-color);
+    }
+
+    .address{
+      color: var(--address-color);
+      margin-top: 0;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img class="avatar" src="assets/images/avatar-jessica.jpeg" alt="">
+    <h2 class="name">Jessica Randall</h2>
+    <p class="address">London, United Kingdom</p>
+    <p class="occupation"><q>Front-end developer and avid reader.</q></p>
+
+    <div class="links">
+      <a href="" class="link">Github</a>
+      <a href="" class="link">Frontend Mentor</a>
+      <a href="" class="link">Linkedln</a>
+      <a href="" class="link">Twitter</a>
+      <a href="" class="link">Instagram</a>
+    </div>
+  </div> 
+</body>
+</html>
